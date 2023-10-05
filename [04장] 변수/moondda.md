@@ -120,9 +120,9 @@ memory leak 방지
 ### naming convention
 식별자를 만들 때 가동성 좋게 한 눈에 구분하기 위해 규정한 명명 규칙
 
-camelCase //변수 함수 
-snake_case
-PascalCase // 생성자 함수, 클래스 이름
+camelCase //변수 함수 <br>
+snake_case<br>
+PascalCase // 생성자 함수, 클래스 이름<br>
 typeHungarianCase
 
 ECMAScript 사양에 정의되어 있는 객체,함수들은 카멜케이스와 파스칼케이스를 따른다. 내가 개발할 때 보통 스네이크를 자주 쓰는데 카멜을 써보는 것도 좋을 것 같다.
