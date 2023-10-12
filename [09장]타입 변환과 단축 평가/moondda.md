@@ -1,10 +1,10 @@
 ## 9.1 타입 변환이란?
 
-**명시적 타입 변환**
+**명시적 타입 변환**<br/>
 타입 캐스팅(type casting)이라고도 한다
 개발자가 의도적으로 값의 타입을 변환하는 것
 
-**암묵적 타입 변환**
+**암묵적 타입 변환**<br/>
 타입 강제 변환이라고도 한다.
 개발자의 `의도와 상관없이` 표현식을 평가하는 도중, 자바스크립트 엔진에 의해 타입이 변환되는 것.
 
@@ -40,13 +40,13 @@ console.log(typeof age_str,age); //string 23
 true + '' //"true"
 undefined + '' //"undefined"
 ```
-+ 연산자는 피연산자 중 하나 이상이 문자열이면 문자열 연결 연산자로 동작한다.
+ +연산자는 피연산자 중 하나 이상이 문자열이면 문자열 연결 연산자로 동작한다.
   
 
 ``` javascript
-1 + 2 + 3 +'4';
-1 + 2 + '3' + '4';
-1+ '2' + 3 + '4';
+1 + 2 + 3 +'4'; //64
+1 + 2 + '3' + '4'; //334
+1+ '2' + 3 + '4'; //1234
 ```
 
 
@@ -133,12 +133,29 @@ Boolean('false') //true
 논리합(||) 논리곱(&&) 연산자 표현식은 `2개의 피연산자 중 어느 한쪽으로` 평가된다
 
 ``` javascript
-"Apple" || "Orange" //true
+"Apple" || "Orange" //"Apple
 "Apple" && "" //""
 false && "Apple" //false
 ```
 단축평가 규칙 p119 참고
 
 ### 9.4.2 옵셔널 체이닝 연산자
+?.(옵서녈 체이닝 연산자)는 객체를 가리키기를 기대하는 변수가 null 또는 undefined이면 undefined 반환, 아니면 프로퍼티 참조 이어나간다
+
+``` javascript
+var elem = null;
+var value = elem?.length;
+var elem2 = "abc";
+var value2 = elem2?.length;
+console.log(value,value2); //undefined 3
+```
+
 ### 9.4.3 null 병합 연산자
-  
+??(옵서녈 체이닝 연산자)는<br/> 좌항의 피연산자가 null또는 undefinced인 경우 우항의 피연산자 반환 <br/> 그렇지 않으면 좌항의 피연산자 반환
+
+``` javascript
+var foo = null ?? 'string';
+var foo2 = 'abc' ?? 'string2';
+console.log(foo); //string
+console.log(foo2); //'abc'
+```
