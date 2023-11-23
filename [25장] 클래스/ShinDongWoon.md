@@ -75,7 +75,7 @@ console.log(me);
 ```
 constructor 내부의 this는 클래스가 생성한 인스턴스를 가리킨다.
 ```javascript
-const person{
+class person{
  constructor(name){
  this.name= name;
  }
