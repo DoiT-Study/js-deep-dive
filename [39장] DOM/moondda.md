@@ -7,7 +7,7 @@ DOM?
 
   39.1.1 HTML 요소와 노드 객체
 
-ex) <div class="greeting">Hello</div>
+ex) `<div class="greeting">Hello</div>`
 
 요소는 요소 노드로 div
 어트리뷰트는 어트리뷰트 노드로 class="greeting"
@@ -19,6 +19,24 @@ HTM문서는 요소의 집합으로 이뤄지며 중첩 관계에 의해 계층�
 이때 이 트리 자료구조를 DOM이라고 한다. DOM 트리라고 부르기도 한다.
 
 39.1.2 노드 객체의 타입
+
+p.679 참고
+
+```
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Finance</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
 
 대표적 4가지 타입
 
