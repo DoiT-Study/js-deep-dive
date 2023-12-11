@@ -1,6 +1,6 @@
 # JavaScript에 Deep Dive 해보자! 🌊
 
-책 구매 [링크](https://product.kyobobook.co.kr/detail/S000001766445)
+[책 구매 링크](https://product.kyobobook.co.kr/detail/S000001766445)
 
 ## 📌 진행 방식
 
